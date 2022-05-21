@@ -88,7 +88,7 @@ const Main = () => {
     }, []);
 
     function fetchData() {
-        fetch("/pizza")
+        fetch("/pizzas")
             .then(res => res.json())
             .then(data => setPizzas(data));
     }
